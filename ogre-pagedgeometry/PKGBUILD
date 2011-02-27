@@ -15,7 +15,8 @@ build() {
     srcdir=$startdir/src/pagedGeometry-$pkgver
     cd $srcdir
 
-    cmake . -DCMAKE_INSTALL_PREFIX=/usr || return 1
+    cmake . -DPAGEDGEOMETRY_BUILD_SAMPLES=0 \
+        -DCMAKE_INSTALL_PREFIX=/usr || return 1
     make || return 1
     make DESTDIR=$startdir/pkg install || return 1
 }
