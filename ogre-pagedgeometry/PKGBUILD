@@ -2,12 +2,12 @@
 
 pkgname=ogre-pagedgeometry
 pkgver=1.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Paged Geometry plugin for OGRE for fast rendering of trees and grass"
 arch=('i686' 'x86_64')
 url="http://www.ogre3d.org/wiki/index.php/PagedGeometry_Engine"
 license=('MIT')
-makedepends=('ogre')
+makedepends=('ogre' 'boost')
 source=(http://ogre-paged.googlecode.com/files/pagedGeometry-1.1.0.zip)
 md5sums=('089b0aefb882344c35b828a999f1918c')
 
